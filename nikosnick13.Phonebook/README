@@ -1,0 +1,76 @@
+# Phonebook Application
+
+This is a phonebook management application built using .NET and the Spectre.Console library to create a terminal-based graphical user interface.
+
+## Table of Contents
+
+- [Description](#description)
+- [System Requirements](#system-requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [License](#license)
+
+## Description
+
+This application allows users to manage their contacts (name, email, and phone number) in a simple and interactive console interface. It supports basic operations like adding, updating, viewing, and deleting contacts, using a database to store the data.
+
+The application is designed with the Spectre.Console library to provide a user-friendly and visually appealing terminal interface.
+
+## System Requirements
+
+- .NET 6 or higher
+- Visual Studio or any compatible C# IDE
+- SQL Server (or any other relational database supported by Entity Framework Core)
+
+## Installation
+
+Follow these steps to get your application up and running:
+
+1. **Clone the repository** or download the code:
+
+    ```bash
+    git clone https://github.com/yourusername/phonebook.git
+    ```
+
+2. **Install dependencies**:
+
+    If you are using Visual Studio, open the solution file (`.sln`). If you are using the terminal, run:
+
+    ```bash
+    dotnet restore
+    ```
+
+3. **Create the database**:
+
+    Run the following command to apply the database migration:
+
+    ```bash
+    dotnet ef database update
+    ```
+
+## Usage
+
+1. After installation and setting up the database, you can run the application using the following command:
+
+    ```bash
+    dotnet run
+    ```
+
+2. You will be presented with a menu where you can choose different options to add, update, view, or delete contacts.
+
+3. The application uses console prompts and the Spectre.Console library to show status messages, confirmation prompts, and visual elements like spinners and tables.
+
+## Features
+
+- **Add Contact**: Allows you to add a new contact with a name, email, and phone number.
+- **View Contacts**: Displays a list of all contacts in a table format.
+- **Update Contact**: Allows you to update the details of an existing contact.
+- **Delete Contact**: Allows you to delete a contact from the phonebook.
+- **Search Contacts**: Allows you to search for contacts by name or phone number.
+- **Confirmation Prompts**: Asks for user confirmation before making changes (e.g., updating or deleting a contact).
+- **Loading Status**: Shows a spinner to indicate loading actions.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
